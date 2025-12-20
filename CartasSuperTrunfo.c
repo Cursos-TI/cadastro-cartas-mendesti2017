@@ -53,7 +53,7 @@ int main() {
 
 
     //E também "Calcular o Pib per Capita". Divida o PIB da cidade pela sua população. 
-    primeiraCartaPibPerCapita = primeiraCartaPib / primeiraCartaHabitantes;
+    primeiraCartaPibPerCapita = primeiraCartaPib / (float) primeiraCartaHabitantes;
 
 
     /*
@@ -95,7 +95,7 @@ int main() {
 
 
     //E também "Calcular o Pib per Capita". Divida o PIB da cidade pela sua população. 
-    segundaCartaPibPerCapita = segundaCartaPib / segundaCartaHabitantes;
+    segundaCartaPibPerCapita = segundaCartaPib / (float) segundaCartaHabitantes;
 
   // Área para exibição dos dados da cidade
     printf("\n\nCarta 1:\n");
