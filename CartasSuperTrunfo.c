@@ -53,7 +53,7 @@ int main() {
 
 
     //E também "Calcular o Pib per Capita". Divida o PIB da cidade pela sua população. 
-    primeiraCartaPibPerCapita = primeiraCartaPib / (float) primeiraCartaHabitantes;
+    primeiraCartaDensiPopulacional = primeiraCartaPib / (float) primeiraCartaHabitantes;
 
 
     /*
@@ -91,11 +91,11 @@ int main() {
 
     //Aqui entra a codificação do Desafio Nivel Aventureiro que inclui "Calcular a Densidade populacional"
     //Dividir população da cidade pela area
-    segundaCartaDensiPopulacional = (float) segundaCartaHabitantes / segundaCartaArea;
+    segundaCartaDensiPopulacional = (float)segundaCartaHabitantes / segundaCartaArea;
 
 
     //E também "Calcular o Pib per Capita". Divida o PIB da cidade pela sua população. 
-    segundaCartaPibPerCapita = segundaCartaPib / (float) segundaCartaHabitantes;
+    segundaCartaPibPerCapita = segundaCartaPib / (float)segundaCartaHabitantes;
 
   // Área para exibição dos dados da cidade
     printf("\n\nCarta 1:\n");
@@ -106,8 +106,8 @@ int main() {
     printf("Area: %.2f km²\n", primeiraCartaArea);
     printf("PIB: %.2f bilhoes de reais\n", primeiraCartaPib);
     printf("Numero de Pontos Turisticos: %d\n", primeiraCartaTuristico);
-    printf("Densidade Populaconal: %.2f hab/km²\n", primeiraCartaDensiPopulacional);
-    printf("PIB per Capita: %.2f reais\n", primeiraCartaPibPerCapita);
+    printf("Densidade Populaconal: %.2f hab/km²\n\n", primeiraCartaDensiPopulacional);
+    printf("\nPIB per Capita: %.2f reais\n", primeiraCartaPibPerCapita);
 
 
     /*
