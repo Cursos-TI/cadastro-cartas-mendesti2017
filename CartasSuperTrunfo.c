@@ -49,7 +49,7 @@ int main() {
 
     //Aqui entra a codificação do Desafio Nivel Aventureiro que inclui "Calcular a Densidade populacional"
     //Dividir população da cidade pela area
-    primeirCartaDensiPopulacional = (float) primeiraCartaHabitantes / primeiraCartaArea;
+    primeiraCartaDensiPopulacional = (float) primeiraCartaHabitantes / primeiraCartaArea;
 
 
     //E também "Calcular o Pib per Capita". Divida o PIB da cidade pela sua população. 
