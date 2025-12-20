@@ -53,7 +53,7 @@ int main() {
 
 
     //E também "Calcular o Pib per Capita". Divida o PIB da cidade pela sua população. 
-    primeiraCartaDensiPopulacional = primeiraCartaPib / (float) primeiraCartaHabitantes;
+    primeiraCartaPibPerCapita = primeiraCartaPib / (float) primeiraCartaHabitantes;
 
 
     /*
