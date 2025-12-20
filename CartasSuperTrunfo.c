@@ -14,6 +14,10 @@ int main() {
     float primeiraCartaPib, segundaCartaPib;
     int primeiraCartaTuristico, segundaCartaTuristico;
 
+    //As proximas variáveis são ref. ao desafio do nivel aventureiro
+    float primeiraCartaDensiPopulacional, segundaCartaDensiPopulacional; //Dividir a população pela area da cidade
+    float primeiraCartaPibPerCapita, segundaCartaPibPerCapita; //Dividir o PIB da cidade pela população
+
   // Área para entrada de dados
     printf("SUPER TRUNFO\nINFORMACOES DA PRIMEIRA CARTA:\n");
 
@@ -42,6 +46,15 @@ int main() {
 
     printf("\nDigite o numero de Pontos Turisticos da cidade: ");
     scanf("%d", &primeiraCartaTuristico);
+
+    //Aqui entra a codificação do Desafio Nivel Aventureiro que inclui "Calcular a Densidade populacional"
+    //Dividir população da cidade pela area
+    primeirCartaDensiPopulacional = (float) primeiraCartaHabitantes / primeiraCartaArea;
+
+
+    //E também "Calcular o Pib per Capita". Divida o PIB da cidade pela sua população. 
+    primeiraCartaPibPerCapita = (float) primeiraCartaPib / primeiraCartaHabitantes;
+
 
     /*
         ---------------------------------------------------------------------------------------
@@ -85,6 +98,9 @@ int main() {
     printf("Area: %.2f km²\n", primeiraCartaArea);
     printf("PIB: %.2f bilhoes de reais\n", primeiraCartaPib);
     printf("Numero de Pontos Turisticos: %d\n", primeiraCartaTuristico);
+    printf("Densidade Populaconal: %.2f hab/km²", primeiraCartaDensiPopulacional);
+    printf("PIB per Capita: %.2f reais\n", primeiraCartaPibPerCapita);
+
 
     /*
         ---------------------------------------------------------------------------------------
@@ -99,6 +115,8 @@ int main() {
     printf("Area: %.2f km²\n", segundaCartaArea);
     printf("PIB: %.2f bilhoes de reais\n", segundaCartaPib);
     printf("Numero de Pontos Turisticos: %d\n\n", segundaCartaTuristico);
+    printf("Densidade Populaconal: %.2f hab/km²", segundaCartaDensiPopulacional);
+    printf("PIB per Capita: %.2f reais\n", segundaCartaPibPerCapita);
 
-return 0;
+    return 0;
 } 
