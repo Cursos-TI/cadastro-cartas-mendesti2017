@@ -139,27 +139,27 @@ int main() {
     */
 
 
-    printf("DETERMINANDO CARTA VENCEDORA PARA OS ATRIBUTOS: POPULAÇÃO, ÁREA, PIB, DENSIDADE POPULACIONAL E PIB PER CAPITA\n");
+    printf("\n\n\nDETERMINANDO CARTA VENCEDORA PARA OS ATRIBUTOS: POPULAÇÃO, ÁREA, PIB, DENSIDADE POPULACIONAL E PIB PER CAPITA\n\n\n");
     if (primeiraCartaHabitantes > segundaCartaHabitantes){
       printf("Carta 1 - São Paulo (SP): %lu\n", primeiraCartaHabitantes);
       printf("Carta 2 - Rio de Janeiro (RJ): %lu\n", segundaCartaHabitantes);
-      printf("Resultado: Carta 1 (São Paulo) venceu!");
+      printf("Resultado: Carta 1 (São Paulo) venceu!\n\n");
 
     } else{
       printf("Carta 1 - São Paulo (SP): %lu\n", primeiraCartaHabitantes);
       printf("Carta 2 - Rio de Janeiro (RJ): %lu\n", segundaCartaHabitantes);
-      printf("Resultado: Carta 2 (Rio de Janeiro) venceu!");
+      printf("Resultado: Carta 2 (Rio de Janeiro) venceu!\n\n");
     }
 
      if (primeiraCartaArea > segundaCartaArea){
       printf("Carta 1 - São Paulo (SP): %.2f km²\n", primeiraCartaArea);
       printf("Carta 2 - Rio de Janeiro (RJ): %.2f km²\n", segundaCartaArea);
-      printf("Resultado: Carta 1 (São Paulo) venceu!\n");
+      printf("Resultado: Carta 1 (São Paulo) venceu!\n\n");
 
     } else{
       printf("Carta 1 - São Paulo (SP): %.2f km²\n", primeiraCartaArea);
       printf("Carta 2 - Rio de Janeiro (RJ): %.2f km²\n", segundaCartaArea);
-      printf("Resultado: Carta 2 (Rio de Janeiro) venceu!\n"); 
+      printf("Resultado: Carta 2 (Rio de Janeiro) venceu!\n\n"); 
     }
     return 0;
 } 
