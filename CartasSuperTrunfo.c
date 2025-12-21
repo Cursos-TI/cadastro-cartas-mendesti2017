@@ -9,7 +9,7 @@ int main() {
     char primeiraCartaEstado, segundacartaEstado;
     char primeiraCartaCodigo[4], segundaCartaCodigo[4];
     char primeiraCartaCidade[50], segundaCartaCidade[50];
-    int primeiraCartaHabitantes, segundaCartaHabitantes;
+    unsigned long int primeiraCartaHabitantes, segundaCartaHabitantes;
     float primeiraCartaArea, segundaCartaArea;
     float primeiraCartaPib, segundaCartaPib;
     int primeiraCartaTuristico, segundaCartaTuristico;
@@ -36,7 +36,7 @@ int main() {
     scanf(" %[^\n]", primeiraCartaCidade);
 
     printf("\nDigite o numero de habitantes da cidade: ");
-    scanf("%d", &primeiraCartaHabitantes);
+    scanf("%lu", &primeiraCartaHabitantes);
 
     printf("\nDigite a area da cidade em quilometros quadrados: ");
     scanf("%f", &primeiraCartaArea);
@@ -78,7 +78,7 @@ int main() {
     scanf(" %[^\n]", segundaCartaCidade);
     
     printf("\nDigite o numero de habitantes da cidade: ");
-    scanf("%d", &segundaCartaHabitantes);
+    scanf("%lu", &segundaCartaHabitantes);
 
     printf("\nDigite a area da cidade em quilometros quadrados: ");
     scanf("%f", &segundaCartaArea);
@@ -102,7 +102,7 @@ int main() {
     printf("Estado: %c\n", primeiraCartaEstado);
     printf("Codigo: %s\n", primeiraCartaCodigo);
     printf("Nome da Cidade: %s\n", primeiraCartaCidade);
-    printf("Populacao: %d\n", primeiraCartaHabitantes);
+    printf("Populacao: %lu\n", primeiraCartaHabitantes);
     printf("Area: %.2f km²\n", primeiraCartaArea);
     printf("PIB: %.2f bilhoes de reais\n", primeiraCartaPib);
     printf("Numero de Pontos Turisticos: %d\n", primeiraCartaTuristico);
@@ -118,7 +118,7 @@ int main() {
     printf("Estado: %c\n", segundacartaEstado);
     printf("Codigo: %s\n", segundaCartaCodigo);
     printf("Nome da Cidade: %s\n", segundaCartaCidade);
-    printf("Populacao: %d\n", segundaCartaHabitantes);
+    printf("Populacao: %lu\n", segundaCartaHabitantes);
     printf("Area: %.2f km²\n", segundaCartaArea);
     printf("PIB: %.2f bilhoes de reais\n", segundaCartaPib);
     printf("Numero de Pontos Turisticos: %d\n", segundaCartaTuristico);
