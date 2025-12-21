@@ -1,11 +1,14 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das cartas
-// Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
+/*
+  Desafio Super Trunfo 
+  Cadastro das cartas. 
+    Objetivo: No nível novato do Tema 2 criar as cartas representando as cidades
+              utilizando scanf para entrada de dados e printf para exibir as informações.
 
+*/
 int main() {
-  // Área para definição das variáveis para armazenar as propriedades das cidades
+  /* Área para definição das variáveis */
     char primeiraCartaEstado, segundacartaEstado;
     char primeiraCartaCodigo[4], segundaCartaCodigo[4];
     char primeiraCartaCidade[50], segundaCartaCidade[50];
@@ -14,11 +17,11 @@ int main() {
     float primeiraCartaPib, segundaCartaPib;
     int primeiraCartaTuristico, segundaCartaTuristico;
 
-    //As proximas variáveis são ref. ao desafio do nivel aventureiro
+    /* As proximas variáveis são ref. ao desafio do nivel aventureiro, do Tema 2 */
     float primeiraCartaDensiPopulacional, segundaCartaDensiPopulacional; //Dividir a população pela area da cidade
     float primeiraCartaPibPerCapita, segundaCartaPibPerCapita; //Dividir o PIB da cidade pela população
 
-  // Área para entrada de dados
+  /* Área para entrada de dados */
     printf("SUPER TRUNFO\nINFORMACOES DA PRIMEIRA CARTA:\n");
 
     //Registrando as informações do primeiroEstado
@@ -36,10 +39,10 @@ int main() {
     scanf(" %[^\n]", primeiraCartaCidade);
 
     printf("\nDigite o numero de habitantes da cidade: ");
-    scanf("%lu", &primeiraCartaHabitantes);
+    scanf(" %lu", &primeiraCartaHabitantes);
 
     printf("\nDigite a area da cidade em quilometros quadrados: ");
-    scanf("%f", &primeiraCartaArea);
+    scanf(" %f", &primeiraCartaArea);
 
     printf("\nDigite o Produto Interno Bruto da cidade: ");
     scanf("%f", &primeiraCartaPib);
@@ -47,10 +50,9 @@ int main() {
     printf("\nDigite o numero de Pontos Turisticos da cidade: ");
     scanf("%d", &primeiraCartaTuristico);
 
-    //Aqui entra a codificação do Desafio Nivel Aventureiro que inclui "Calcular a Densidade populacional"
+    /* Aqui entra a codificação do Desafio Nivel Aventureiro que inclui "Calcular a Densidade populacional" */
     //Dividir população da cidade pela area
     primeiraCartaDensiPopulacional = (float) primeiraCartaHabitantes / primeiraCartaArea;
-
 
     //E também "Calcular o Pib per Capita". Divida o PIB da cidade pela sua população. 
     primeiraCartaPibPerCapita = primeiraCartaPib / (float) primeiraCartaHabitantes;
@@ -97,7 +99,11 @@ int main() {
     //E também "Calcular o Pib per Capita". Divida o PIB da cidade pela sua população. 
     segundaCartaPibPerCapita = segundaCartaPib / (float)segundaCartaHabitantes;
 
-  // Área para exibição dos dados da cidade
+    /*
+        ---------------------------------------------------------------------------------------
+        O codigo a seguir exibe as informações da primeira carta do super trunfo
+        ---------------------------------------------------------------------------------------
+    */
     printf("\n\nCarta 1:\n");
     printf("Estado: %c\n", primeiraCartaEstado);
     printf("Codigo: %s\n", primeiraCartaCodigo);
@@ -126,6 +132,34 @@ int main() {
     printf("PIB per Capita: %.2f reais\n", segundaCartaPibPerCapita);
     
 
+    /*
+        ---------------------------------------------------------------------------------------
+        O codigo a seguir realiza a comparação das informações das duas cartas
+        ---------------------------------------------------------------------------------------
+    */
 
+
+    printf("DETERMINANDO CARTA VENCEDORA PARA OS ATRIBUTOS: POPULAÇÃO, ÁREA, PIB, DENSIDADE POPULACIONAL E PIB PER CAPITA\n");
+    if (primeiraCartaHabitantes > segundaCartaHabitantes){
+      printf("Carta 1 - São Paulo (SP): %lu\n", primeiraCartaHabitantes);
+      printf("Carta 2 - Rio de Janeiro (RJ): %lu\n", segundaCartaHabitantes);
+      printf("Resultado: Carta 1 (São Paulo) venceu!");
+
+    } else{
+      printf("Carta 1 - São Paulo (SP): %lu\n", primeiraCartaHabitantes);
+      printf("Carta 2 - Rio de Janeiro (RJ): %lu\n", segundaCartaHabitantes);
+      printf("Resultado: Carta 2 (Rio de Janeiro) venceu!");
+    }
+
+     if (primeiraCartaArea > segundaCartaArea){
+      printf("Carta 1 - São Paulo (SP): %.2f km²\n", primeiraCartaArea);
+      printf("Carta 2 - Rio de Janeiro (RJ): %.2f km²\n", segundaCartaArea);
+      printf("Resultado: Carta 1 (São Paulo) venceu!\n");
+
+    } else{
+      printf("Carta 1 - São Paulo (SP): %.2f km²\n", primeiraCartaArea);
+      printf("Carta 2 - Rio de Janeiro (RJ): %.2f km²\n", segundaCartaArea);
+      printf("Resultado: Carta 2 (Rio de Janeiro) venceu!\n"); 
+    }
     return 0;
 } 
