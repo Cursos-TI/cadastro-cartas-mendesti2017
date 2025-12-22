@@ -140,58 +140,67 @@ int main() {
 
 
     printf("\n\n\nDETERMINANDO CARTA VENCEDORA PARA OS ATRIBUTOS: POPULAÇÃO, ÁREA, PIB, DENSIDADE POPULACIONAL E PIB PER CAPITA\n\n\n");
-    printf("A CARTA COM MAIOR VALOR VENCE, EXCETO PELO DENSIDADE POPULACIONAL QUE VENCERÁ QUEM TIVER O MENOR VALOR\n\n\n")
+    printf("A CARTA COM MAIOR VALOR VENCE, EXCETO PELO DENSIDADE POPULACIONAL QUE VENCERÁ QUEM TIVER O MENOR VALOR\n\n\n");
     if (primeiraCartaHabitantes > segundaCartaHabitantes){
+      printf("Comparação ref. papulacao:\n");
       printf("Carta 1 - São Paulo (SP): %lu\n", primeiraCartaHabitantes);
       printf("Carta 2 - Rio de Janeiro (RJ): %lu\n", segundaCartaHabitantes);
       printf("Resultado: Carta 1 (São Paulo) venceu!\n\n");
 
     } else{
+      printf("Comparação ref. papulacao:\n");
       printf("Carta 1 - São Paulo (SP): %lu\n", primeiraCartaHabitantes);
       printf("Carta 2 - Rio de Janeiro (RJ): %lu\n", segundaCartaHabitantes);
       printf("Resultado: Carta 2 (Rio de Janeiro) venceu!\n\n");
     }
 
      if (primeiraCartaArea > segundaCartaArea){
+      printf("Comparação ref. area:\n");
       printf("Carta 1 - São Paulo (SP): %.2f km²\n", primeiraCartaArea);
       printf("Carta 2 - Rio de Janeiro (RJ): %.2f km²\n", segundaCartaArea);
       printf("Resultado: Carta 1 (São Paulo) venceu!\n\n");
 
     } else{
+      printf("Comparação ref. area:\n");
       printf("Carta 1 - São Paulo (SP): %.2f km²\n", primeiraCartaArea);
       printf("Carta 2 - Rio de Janeiro (RJ): %.2f km²\n", segundaCartaArea);
       printf("Resultado: Carta 2 (Rio de Janeiro) venceu!\n\n"); 
     }
 
     if (primeiraCartaPib > segundaCartaPib){
+      printf("Comparação ref. PIB:\n");
       printf("Carta 1 - São Paulo (SP): %.2f bilhoes de reais\n", primeiraCartaPib);
       printf("Carta 2 - Rio de Janeiro (RJ): %.2f bilhoes de reais\n", segundaCartaPib);
       printf("Resultado: Carta 1 (São Paulo) venceu!\n\n");
 
     } else{
+      printf("Comparação ref. PIB:\n");
       printf("Carta 1 - São Paulo (SP): %.2f bilhoes de reais\n", primeiraCartaPib);
       printf("Carta 2 - Rio de Janeiro (RJ): %.2f bilhoes de reais\n", segundaCartaPib);
       printf("Resultado: Carta 2 (Rio de Janeiro) venceu!\n\n"); 
     }
 
     if (primeiraCartaDensiPopulacional < segundaCartaDensiPopulacional){
-      printf("Vence quem tiver o menor valor!!!");
+      printf("Vence quem tiver o menor Densidade Populacional!!!");
       printf("Carta 1 - São Paulo (SP): %.2f hab/km²\n", primeiraCartaDensiPopulacional);
       printf("Carta 2 - Rio de Janeiro (RJ): %.2f hab/km²\n", segundaCartaDensiPopulacional);
       printf("Resultado: Carta 1 (São Paulo) venceu!\n\n");
 
     } else{
+      printf("Vence quem tiver o menor Densidade Populacional!!!");
       printf("Carta 1 - São Paulo (SP): %.2f hab/km²\n", primeiraCartaDensiPopulacional);
       printf("Carta 2 - Rio de Janeiro (RJ): %.2f hab/km²\n", segundaCartaDensiPopulacional);
       printf("Resultado: Carta 2 (Rio de Janeiro) venceu!\n\n"); 
     }
 
     if (primeiraCartaPibPerCapita > segundaCartaPibPerCapita){
+      printf("Comparação ref. PIB Per Capita:\n");
       printf("Carta 1 - São Paulo (SP): %.2f reais \n", primeiraCartaPibPerCapita);
       printf("Carta 2 - Rio de Janeiro (RJ): %.2f bilhoes de reais\n", segundaCartaPibPerCapita);
       printf("Resultado: Carta 1 (São Paulo) venceu!\n\n");
 
     } else{
+      printf("Comparação ref. PIB Per Capita:\n");
       printf("Carta 1 - São Paulo (SP): %.2f reais \n", primeiraCartaPibPerCapita);
       printf("Carta 2 - Rio de Janeiro (RJ): %.2f bilhoes de reais\n", segundaCartaPibPerCapita);
       printf("Resultado: Carta 2 (Rio de Janeiro) venceu!\n\n"); 
