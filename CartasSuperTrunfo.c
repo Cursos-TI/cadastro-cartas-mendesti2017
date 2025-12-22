@@ -140,6 +140,7 @@ int main() {
 
 
     printf("\n\n\nDETERMINANDO CARTA VENCEDORA PARA OS ATRIBUTOS: POPULAÇÃO, ÁREA, PIB, DENSIDADE POPULACIONAL E PIB PER CAPITA\n\n\n");
+    printf("A CARTA COM MAIOR VALOR VENCE, EXCETO PELO DENSIDADE POPULACIONAL QUE VENCERÁ QUEM TIVER O MENOR VALOR\n\n\n")
     if (primeiraCartaHabitantes > segundaCartaHabitantes){
       printf("Carta 1 - São Paulo (SP): %lu\n", primeiraCartaHabitantes);
       printf("Carta 2 - Rio de Janeiro (RJ): %lu\n", segundaCartaHabitantes);
@@ -174,6 +175,7 @@ int main() {
     }
 
     if (primeiraCartaDensiPopulacional < segundaCartaDensiPopulacional){
+      printf("Vence quem tiver o menor valor!!!");
       printf("Carta 1 - São Paulo (SP): %.2f hab/km²\n", primeiraCartaDensiPopulacional);
       printf("Carta 2 - Rio de Janeiro (RJ): %.2f hab/km²\n", segundaCartaDensiPopulacional);
       printf("Resultado: Carta 1 (São Paulo) venceu!\n\n");
