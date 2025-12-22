@@ -181,13 +181,13 @@ int main() {
     }
 
     if (primeiraCartaDensiPopulacional < segundaCartaDensiPopulacional){
-      printf("Vence quem tiver o menor Densidade Populacional!!!");
+      printf("Vence quem tiver o menor Densidade Populacional!!!\n");
       printf("Carta 1 - São Paulo (SP): %.2f hab/km²\n", primeiraCartaDensiPopulacional);
       printf("Carta 2 - Rio de Janeiro (RJ): %.2f hab/km²\n", segundaCartaDensiPopulacional);
       printf("Resultado: Carta 1 (São Paulo) venceu!\n\n");
 
     } else{
-      printf("Vence quem tiver o menor Densidade Populacional!!!");
+      printf("Vence quem tiver o menor Densidade Populacional!!!\n");
       printf("Carta 1 - São Paulo (SP): %.2f hab/km²\n", primeiraCartaDensiPopulacional);
       printf("Carta 2 - Rio de Janeiro (RJ): %.2f hab/km²\n", segundaCartaDensiPopulacional);
       printf("Resultado: Carta 2 (Rio de Janeiro) venceu!\n\n"); 
